@@ -1,4 +1,3 @@
-// LazyImage.js
 import React from 'react';
 import LazyLoad from 'react-lazyload';
 

@@ -12,4 +12,3 @@ function UapdatedComponent(OrignalComponent) {
 };
 
 export default UapdatedComponent;
-;

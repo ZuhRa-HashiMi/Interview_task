@@ -1,13 +1,13 @@
 import { Row, Col } from 'antd';
 import React from 'react';
-import WrappedComponent from './components/WrappedComponent';
+import WrappedComponent from './components/hocWrapped/WrappedComponent';
 import withAdditionalProp from './hoc/withAdditionalProp';
-import LazyImage from './LazyImage';
-import picOne from './Assets/1.jpg';
-import picTwo from './Assets/2.jpg';
-import Person1 from "./Person_one";
-import Person2 from './Person_two';
-import SearchCountries from './components/form';
+import LazyImage from './components/Streaming/LazyImage';
+import picOne from './Assets/images/1.jpg';
+import picTwo from './Assets/images/2.jpg';
+import Person1 from "./components/persons/Person_one";
+import Person2 from './components/persons/Person_two';
+import SearchCountries from './components/debounceSearch/form';
 
 const EnhancedComponent = withAdditionalProp(WrappedComponent);
 

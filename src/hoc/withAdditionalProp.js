@@ -1,4 +1,3 @@
-// hoc/withAdditionalProp.js
 import React from 'react';
 
 const withAdditionalProp = (WrappedComponent) => {
@@ -6,8 +5,8 @@ const withAdditionalProp = (WrappedComponent) => {
     render() {
       return (
         <WrappedComponent
-          {...this.props}  // Pass through existing props
-          hocProp="I am from HOC!"  // Add an additional prop
+          {...this.props} 
+          hocProp="I am from HOC!"
         />
       );
     }

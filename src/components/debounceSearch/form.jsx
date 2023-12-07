@@ -1,10 +1,10 @@
 import React, { useState, useMemo, useEffect } from "react";
-import useDebounce from "../hook/debounce";
-import { countries } from "../utils/countries";
+import useDebounce from "../../hook/debounce";
+import { countries } from "../../utils/countries";
 
 const SearchCountries = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const debouncedSearchTerm = useDebounce(searchTerm, 500); // 500ms debounce
+  const debouncedSearchTerm = useDebounce(searchTerm, 800); // 800ms debounce
   const filteredCountries = useMemo(() => {
     console.log("Filtering countries...");
     return countries.filter((country) =>
